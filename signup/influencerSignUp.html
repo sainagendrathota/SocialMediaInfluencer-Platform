@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Sign Up - Influencer Connect</title>
+    <link rel="stylesheet" href="../css/loginSignup.css">
+</head>
+<body class="body-base auth-page">
+    <div class="auth-container">
+        <h1 class="site-title auth-title">Influencer Connect</h1>
+        <h2 class="auth-heading">Influencer Sign Up</h2>
+        <form class="auth-form" id="influencer-signup-form">
+            <div class="form-group">
+                <label for="influencer-signup-name">Full Name</label>
+                <input type="text" id="influencer-signup-name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="influencer-signup-email">Email Address</label>
+                <input type="email" id="influencer-signup-email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="influencer-signup-password">Password</label>
+                <input type="password" id="influencer-signup-password" placeholder="••••••••" required>
+            </div>
+            <div class="form-group">
+                <label for="influencer-signup-confirm-password">Confirm Password</label>
+                <input type="password" id="influencer-signup-confirm-password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn btn-secondary auth-submit-btn">Sign Up</button>
+        </form>
+        <p class="auth-info-text">Already have an account? <a href="../login/influcerLogin.html" class="text-link">Login here</a>.</p>
+
+        <div class="auth-actions">
+            <a href="index.html" class="btn btn-secondary-outline btn-small">Back to Landing Page</a>
+            <a href="app.html" class="btn btn-alt-white btn-small">Launch Main App (Demo)</a>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>

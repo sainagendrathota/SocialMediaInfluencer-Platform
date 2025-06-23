@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Sign Up - Influencer Connect</title>
+    <link rel="stylesheet" href="../css/loginSignup.css">
+</head>
+<body class="body-base auth-page">
+    <div class="auth-container">
+        <h1 class="site-title auth-title">Influencer Connect</h1>
+        <h2 class="auth-heading">Company Sign Up</h2>
+        <form class="auth-form" id="company-signup-form">
+            <div class="form-group">
+                <label for="company-signup-name">Company Name</label>
+                <input type="text" id="company-signup-name" placeholder="Acme Corp" required>
+            </div>
+             <div class="form-group">
+                <label for="company-signup-contact">Contact Person Name</label>
+                <input type="text" id="company-signup-contact" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="company-signup-email">Company Email</label>
+                <input type="email" id="company-signup-email" placeholder="company@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="company-signup-password">Password</label>
+                <input type="password" id="company-signup-password" placeholder="••••••••" required>
+            </div>
+            <div class="form-group">
+                <label for="company-signup-confirm-password">Confirm Password</label>
+                <input type="password" id="company-signup-confirm-password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn btn-secondary auth-submit-btn">Sign Up</button>
+        </form>
+        <p class="auth-info-text">Already have an account? <a href="../login/companyLogin.html" class="text-link">Login here</a>.</p>
+
+        <div class="auth-actions">
+            <a href="index.html" class="btn btn-secondary-outline btn-small">Back to Landing Page</a>
+            <a href="app.html" class="btn btn-alt-white btn-small">Launch Main App (Demo)</a>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
