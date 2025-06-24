@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Dashboard - Influencer Connect</title>
+    <link rel="stylesheet" href="../css/influencerDashboard.css">
+</head>
+<body class="body-base">
+    <div id="toast-container" class="toast-container"></div>
+    <header class="app-header">
+        <div class="container app-header-content">
+            <h1 class="app-title">Influencer Dashboard</h1>
+            <div class="header-buttons">
+                <button id="edit-my-profile-btn" class="btn btn-edit-profile">Edit My Profile</button>
+                <button id="logout-btn" class="btn btn-logout">Logout</button>
+            </div>
+        </div>
+    </header>
+    <main class="container main-content-area">
+        <section class="section my-profile-section">
+            <h2 class="section-heading">My Profile</h2>
+            <div id="my-profile-card" class="influencer-card influencer-profile-view">
+                <div class="loading-spinner" id="profile-loading-spinner">
+                    <div class="spinner-animation"></div>
+                    <p class="loading-message">Loading your profile...</p>
+                </div>
+                <div class="no-influencers-message" id="no-profile-message" style="display: none;">
+                    <p>No profile found. Please add your profile details by clicking "Edit My Profile".</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Influencer Connect. All rights reserved.</p>
+        </div>
+    </footer>
+    <div id="influencer-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-modal-btn" class="modal-close-btn">&times;</button>
+            <h2 id="modal-title" class="modal-title">Edit Influencer Profile</h2>
+            <form id="influencer-form" class="form-layout">
+                <input type="hidden" id="influencer-id">
+                <input type="hidden" id="user-email-hidden">
+                <div class="form-group">
+                    <label for="name">Name <span class="required-star">*</span></label>
+                    <input type="text" id="name" required class="input-field">
+                    <p class="error-message name-error hidden"></p>
+                </div>
+                <div class="form-group">
+                    <label for="platform">Platform <span class="required-star">*</span></label>
+                    <select id="platform" required class="input-field select-field">
+                        <option value="">Select Platform</option>
+                        <option value="YouTube">YouTube</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="TikTok">TikTok</option>
+                        <option value="Twitch">Twitch</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="Facebook">Facebook</option>
+                    </select>
+                    <p class="error-message platform-error hidden"></p>
+                </div>
+                <div class="form-group">
+                    <label for="followerCount">Follower Count <span class="required-star">*</span></label>
+                    <input type="number" id="followerCount" required class="input-field">
+                    <p class="error-message followerCount-error hidden"></p>
+                </div>
+                <div class="form-group">
+                    <label for="segment">Segment <span class="required-star">*</span></label>
+                    <input type="text" id="segment" required class="input-field" placeholder="e.g., Tech, Fashion, Gaming">
+                    <p class="error-message segment-error hidden"></p>
+                </div>
+                <fieldset class="form-fieldset">
+                    <legend class="fieldset-legend">Audience Demographics</legend>
+                    <div class="fieldset-content">
+                        <div class="form-group small-input-group">
+                            <label for="demographics-age">Age Range</label>
+                            <input type="text" id="demographics-age" class="input-field small-input" placeholder="e.g., 18-34, 25-44">
+                        </div>
+                        <div class="form-group small-input-group">
+                            <label for="demographics-gender">Gender Distribution</label>
+                            <input type="text" id="demographics-gender" class="input-field small-input" placeholder="e.g., 60% Male, 40% Female">
+                        </div>
+                        <div class="form-group small-input-group">
+                            <label for="demographics-location">Primary Location</label>
+                            <input type="text" id="demographics-location" class="input-field small-input" placeholder="e.g., North America, Global">
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label for="profilePicture">Profile Picture URL</label>
+                    <input type="url" id="profilePicture" class="input-field" placeholder="Optional image URL">
+                    <p class="error-message profilePicture-error hidden"></p>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="cancel-form-btn" class="btn btn-cancel">
+                        Cancel
+                    </button>
+                    <button type="submit" id="submit-form-btn" class="btn btn-primary btn-save">
+                        Save Profile
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../javascript/influencer-dashboard.js"></script>
+</body>
+</html>

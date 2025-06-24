@@ -1,0 +1,189 @@
+{
+  "influencers": [
+    {
+      "id": "1",
+      "name": "TechGuru Emily",
+      "platform": "YouTube",
+      "followerCount": 1500000,
+      "segment": "Tech & Gadgets",
+      "demographics": {
+        "age": "18-34",
+        "gender": "60% Male, 40% Female",
+        "location": "North America"
+      },
+      "profilePicture": "https://placehold.co/100x100/A8DADC/FFFFFF?text=Emily",
+      "userEmail": "emily@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Fashionista Maya",
+      "platform": "Instagram",
+      "followerCount": 850000,
+      "segment": "Fashion & Lifestyle",
+      "demographics": {
+        "age": "18-24",
+        "gender": "80% Female, 20% Male",
+        "location": "Global"
+      },
+      "profilePicture": "https://placehold.co/100x100/F7CAC9/FFFFFF?text=Maya",
+      "userEmail": "maya@example.com"
+    },
+    {
+      "id": "3",
+      "name": "GamerX Alex",
+      "platform": "Twitch",
+      "followerCount": 2000000,
+      "segment": "Gaming",
+      "demographics": {
+        "age": "13-25",
+        "gender": "75% Male, 25% Female",
+        "location": "Europe"
+      },
+      "profilePicture": "https://placehold.co/100x100/D0D6B5/FFFFFF?text=Alex",
+      "userEmail": "alex@example.com"
+    },
+    {
+      "id": "4",
+      "name": "FoodExplorer Chef",
+      "platform": "TikTok",
+      "followerCount": 1200000,
+      "segment": "Food & Cooking",
+      "demographics": {
+        "age": "25-44",
+        "gender": "55% Female, 45% Male",
+        "location": "Asia"
+      },
+      "profilePicture": "https://placehold.co/100x100/FFE156/FFFFFF?text=Chef",
+      "userEmail": "chef@example.com"
+    },
+    {
+      "id": "5",
+      "name": "CodeWithAarav",
+      "platform": "YouTube",
+      "followerCount": 950000,
+      "segment": "Tech & Gadgets",
+      "demographics": {
+        "age": "18-30",
+        "gender": "70% Male, 30% Female",
+        "location": "India"
+      },
+      "profilePicture": "https://placehold.co/100x100/4ECDC4/FFFFFF?text=Aarav",
+      "userEmail": "aarav.tech@example.com"
+    },
+    {
+      "userEmail": "anya.fitness@example.com",
+      "name": "FitWithAnya",
+      "platform": "Twitter",
+      "followerCount": 420000,
+      "segment": "Fitness",
+      "demographics": {
+        "age": "18-35",
+        "gender": "65% Female, 35% Male",
+        "location": "Global"
+      },
+      "profilePicture": "https://placehold.co/100x100/FF6B6B/FFFFFF?text=Anya",
+      "id": "6"
+    },
+    {
+      "id": "7",
+      "name": "GlobalTrekker Raj",
+      "platform": "YouTube",
+      "followerCount": 300000,
+      "segment": "Travel",
+      "demographics": {
+        "age": "20-40",
+        "gender": "50% Male, 50% Female",
+        "location": "Asia, Europe"
+      },
+      "profilePicture": "https://placehold.co/100x100/1A535C/FFFFFF?text=Raj",
+      "userEmail": "raj.travel@example.com"
+    },
+    {
+      "id": "8",
+      "name": "GlamNGlow Reema",
+      "platform": "TikTok",
+      "followerCount": 870000,
+      "segment": "Beauty",
+      "demographics": {
+        "age": "16-30",
+        "gender": "85% Female, 15% Male",
+        "location": "Middle East"
+      },
+      "profilePicture": "https://placehold.co/100x100/E63946/FFFFFF?text=Reema",
+      "userEmail": "reema.beauty@example.com"
+    }
+  ],
+  "influencerUsers": [
+    {
+      "id": "1",
+      "fullName": "Test Influencer",
+      "email": "emily@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "2",
+      "fullName": "Maya Singh",
+      "email": "maya@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "3",
+      "fullName": "Alex Gaming",
+      "email": "alex@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "4",
+      "fullName": "Chef Ramsey",
+      "email": "chef@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "5",
+      "fullName": "Aarav Singh",
+      "email": "aarav.tech@example.com",
+      "password": "passaarav123"
+    },
+    {
+      "id": "6",
+      "fullName": "Anya Kapoor",
+      "email": "anya.fitness@example.com",
+      "password": "fitnessanya"
+    },
+    {
+      "id": "7",
+      "fullName": "Raj Mehta",
+      "email": "raj.travel@example.com",
+      "password": "travelraj2024"
+    },
+    {
+      "id": "8",
+      "fullName": "Reema Khan",
+      "email": "reema.beauty@example.com",
+      "password": "glowreema"
+    }
+  ],
+  "companyUsers": [
+    {
+      "id": "1",
+      "companyName": "Test Company",
+      "contactPersonName": "Jane Doe",
+      "email": "company@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "2",
+      "companyName": "BrandBoost Co.",
+      "contactPersonName": "John Smith",
+      "email": "brandboost@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "3",
+      "companyName": "GlowUp Cosmetics",
+      "contactPersonName": "Meera Chopra",
+      "email": "glowup@example.com",
+      "password": "meera2025"
+    }
+  ]
+}

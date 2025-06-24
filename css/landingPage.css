@@ -7,7 +7,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 .container {
     max-width: 1280px;
     margin-left: auto;
@@ -113,7 +112,7 @@ body {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.hero-section {
+.user-section {
     flex-grow: 1;
     background: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
     display: flex;
@@ -126,11 +125,11 @@ body {
     text-align: center;
 }
 
-.hero-content {
+.user-content {
     max-width: 56rem;
 }
 
-.hero-title {
+.user-title {
     font-size: 3rem;
     font-weight: 800;
     color: #111827;
@@ -138,30 +137,27 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.hero-title-highlight {
+.user-title-highlight {
     color: #1d4ed8;
 }
 
-.hero-subtitle {
+.user-subtitle {
     font-size: 1.25rem;
     color: #374151;
     margin-bottom: 2.5rem;
     line-height: 1.625;
 }
-
-.hero-buttons {
+.user-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
 }
-
 @media (min-width: 640px) {
-    .hero-buttons {
+    .user-buttons {
         flex-direction: row;
     }
 }
-
 .section {
     padding-top: 4rem;
     padding-bottom: 4rem;

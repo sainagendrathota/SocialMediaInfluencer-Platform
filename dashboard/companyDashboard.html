@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard - Influencer Connect</title>
+    <link rel="stylesheet" href="../css/companyDashboard.css">
+</head>
+<body class="body-base">
+    <div id="toast-container" class="toast-container"></div>
+    <header class="app-header">
+        <div class="container app-header-content">
+            <h1 class="app-title">Company Dashboard</h1>
+            <div class="header-buttons">
+                <button id="logout-btn" class="btn btn-logout">Logout</button>
+            </div>
+        </div>
+    </header>
+    <main class="container main-content-area">
+        <section class="section search-filter-section">
+            <h2 class="section-heading">Find Influencers</h2>
+            <div class="search-filter-grid">
+                <input type="text" id="search-name" placeholder="Search by Name" class="input-field">
+                <select id="filter-platform" class="input-field select-field">
+                    <option value="">All Platforms</option>
+                    <option value="YouTube">YouTube</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="TikTok">TikTok</option>
+                    <option value="Twitch">Twitch</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Facebook">Facebook</option>
+                </select>
+                <select id="filter-segment" class="input-field select-field">
+                    <option value="">All Segments</option>
+                    <option value="Tech & Gadgets">Tech & Gadgets</option>
+                    <option value="Fashion & Lifestyle">Fashion & Lifestyle</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Food & Cooking">Food & Cooking</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Fitness">Fitness</option>
+                    <option value="Beauty">Beauty</option>
+                </select>
+                <div class="min-followers-group">
+                    <label for="min-followers" class="min-followers-label">Min Followers:</label>
+                    <input type="number" id="min-followers" placeholder="e.g., 10000" class="input-field min-followers-input">
+                </div>
+            </div>
+            <div class="button-container text-align-center">
+                <button id="reset-filters-btn" class="btn btn-reset-filters">
+                    Reset Filters
+                </button>
+            </div>
+        </section>
+        <section class="section influencer-list-section">
+            <h2 class="section-heading">Influencer Profiles</h2>
+            <div id="influencer-list" class="influencer-grid">
+                <div id="loading-spinner" class="loading-spinner" style="display: none;">
+                    <div class="spinner-animation"></div>
+                    <p class="loading-message">Loading influencers...</p>
+                </div>
+                <div id="no-influencers-message" class="no-influencers-message" style="display: none;">
+                    <p>No influencers found matching your criteria.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Influencer Connect. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../javascript/company-dashboard.js"></script>
+</body>
+</html>
